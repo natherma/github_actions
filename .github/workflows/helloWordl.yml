@@ -1,0 +1,13 @@
+name: "Hello World"
+
+on:
+  push:
+    branches: -master
+      -production
+
+jobs:
+  helloWorld:
+    runs-on: ubunto-latest
+    steps:
+      - name: "Pri/nt Hello World"
+        run: echo "Hello World"
