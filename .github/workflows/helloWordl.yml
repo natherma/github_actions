@@ -2,12 +2,13 @@ name: "Hello World"
 
 on:
   push:
-    branches: -master
-      -production
+    branches:
+      - master
+      - production
 
 jobs:
   helloWorld:
-    runs-on: ubunto-latest
+    runs-on: ubuntu-latest
     steps:
-      - name: "Pri/nt Hello World"
+      - name: "Print Hello World"
         run: echo "Hello World"
