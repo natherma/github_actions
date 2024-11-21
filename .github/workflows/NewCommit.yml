@@ -1,0 +1,11 @@
+name: "New Commit"
+
+on:
+  push:
+
+jobs:
+  NewCommit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "new commit"
+        run: echo "New Commit"
